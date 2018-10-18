@@ -40,7 +40,7 @@ class ModelIncome(models.Model):
     monthly_budget_model = models.ForeignKey(MonthylyBudgetModel, related_name='monthly_model_income', on_delete=models.CASCADE)
 
 
-class modelExpense(models.Model):
+class ModelExpense(models.Model):
     '''this class models an exopense in a monthly budget model'''
     name = models.CharField(max_length=30)
     amount = models.DecimalField(max_digits=20, decimal_places=2)
